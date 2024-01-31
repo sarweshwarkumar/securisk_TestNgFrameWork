@@ -27,7 +27,6 @@ public class RfqPage {
 
 	public void Create() {
 		CreateRFQ.click();
-
 	}
 
 	@FindBy(xpath = "//*[@aria-label='------Select Product Category------']")

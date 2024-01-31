@@ -22,7 +22,6 @@ public class Tc_LoginPage extends Baseclass {
 		Thread.sleep(2000);
 		Lp.Username(username);
 		Thread.sleep(2000);
-
 		Lp.Password(pwd);
 		Thread.sleep(2000);
 		Lp.FinalLogin();

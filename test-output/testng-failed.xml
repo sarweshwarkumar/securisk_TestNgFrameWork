@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.Tc_PolicytermsPage">
+      <class name="testcases.IntemediaryAddCoverageTest">
         <methods>
+          <include name="addCoverage"/>
           <include name="setup"/>
-          <include name="coveragedetailspage"/>
           <include name="teardown"/>
-          <include name="PolicytermsPage"/>
         </methods>
-      </class> <!-- testcases.Tc_PolicytermsPage -->
+      </class> <!-- testcases.IntemediaryAddCoverageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

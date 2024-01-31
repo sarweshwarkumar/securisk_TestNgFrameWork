@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Loginpage {
 	public WebDriver driver;
+	
 
 	Reusablemethods Reuse = new Reusablemethods(driver);
 
@@ -31,6 +32,7 @@ public class Loginpage {
 
 		Thread.sleep(2000);
 	}
+	
 
 	@FindBy(css = "input[aria-label='Enter Password']")
 	WebElement PasswordTextBox;
