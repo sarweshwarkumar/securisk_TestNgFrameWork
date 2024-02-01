@@ -10,7 +10,7 @@ public class Readconfig {
 	Properties Prop;
 
 	public Readconfig() {
-		File src = new File("C:\\Users\\sa22043\\Downloads\\Flutter-securisk\\system.properties");
+		File src = new File("./system.properties");
 		try {
 			FileInputStream fis = new FileInputStream(src);
 			Prop = new Properties();
