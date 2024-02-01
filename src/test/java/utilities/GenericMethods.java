@@ -20,7 +20,7 @@ public class GenericMethods {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File loc = ts.getScreenshotAs(OutputType.FILE);
 		File file = new File(
-				"./Screenshorts" + "//" + filename + System.currentTimeMillis() + ".png");
+				"./Screenshorts" + "/" + filename + System.currentTimeMillis() + ".png");
 		Files.copy(loc, file);
 		return file.getAbsolutePath();
 	}
