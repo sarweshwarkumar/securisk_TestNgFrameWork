@@ -54,6 +54,9 @@ public class Reusablemethods {
 		Files.copy(src, trg);
 		System.out.println("Screenshot captured successfully");
 	}
+	
+	
+	
  
 	
 
