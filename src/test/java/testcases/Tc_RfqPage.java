@@ -2,7 +2,6 @@ package testcases;
 
 import org.testng.annotations.Test;
 
-import pageobjects.Corporate;
 import pageobjects.RfqPage;
 
 public class Tc_RfqPage extends Tc_LoginPage{

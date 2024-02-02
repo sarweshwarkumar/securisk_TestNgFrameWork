@@ -1,17 +1,19 @@
 package testcases;
 
+import java.time.Duration;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.Readconfig;
@@ -32,9 +34,16 @@ public class Baseclass {
 		Baseclass.wait = wait;
 	}
 
-//	protected void WaitUntilElementVisible(WebElement element) {
-//		wait.until(ExpectedConditions.visibilityOf(element));
-//	}
+	public void WaitUntilElementVisible(WebElement element) {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	public void startReport(String filename) {
+		reports = new ExtentReports("./TestReports/"+filename+".html");
+	}
+	public void endReport() {
+		reports.endTest(test);
+	}
 
 	@BeforeSuite
 
@@ -58,7 +67,7 @@ public class Baseclass {
 	public void teardown() {
 		//driver.close();;
 		// reports.endTest(test);
-		//reports.flush();
+		reports.flush();
 	}
 
 }
