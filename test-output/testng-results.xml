@@ -1,80 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-31T15:27:12 IST" name="Default suite" finished-at="2024-01-31T15:28:47 IST" duration-ms="95065">
+  <suite started-at="2024-02-02T09:40:57 IST" name="Default suite" finished-at="2024-02-02T09:41:32 IST" duration-ms="35134">
     <groups>
     </groups>
-    <test started-at="2024-01-31T15:27:12 IST" name="Default test" finished-at="2024-01-31T15:28:47 IST" duration-ms="95065">
-      <class name="testcases.Tc_PolicytermsPage">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.Tc_PolicytermsPage@37afeb11]" started-at="2024-01-31T15:27:00 IST" name="setup" finished-at="2024-01-31T15:27:12 IST" duration-ms="12131" status="PASS">
+    <test started-at="2024-02-02T09:40:57 IST" name="Default test" finished-at="2024-02-02T09:41:32 IST" duration-ms="35134">
+      <class name="testcases.IntermediaryDeleteProduct">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.IntermediaryDeleteProduct@242b836]" started-at="2024-02-02T09:40:50 IST" name="setup" finished-at="2024-02-02T09:40:57 IST" duration-ms="6533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="launch()[pri:1, instance:testcases.Tc_PolicytermsPage@37afeb11]" started-at="2024-01-31T15:27:12 IST" name="launch" finished-at="2024-01-31T15:27:21 IST" duration-ms="8643" status="PASS">
+        <test-method signature="addProduct()[pri:2, instance:testcases.IntermediaryDeleteProduct@242b836]" started-at="2024-02-02T09:40:57 IST" name="addProduct" finished-at="2024-02-02T09:41:15 IST" duration-ms="17567" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="rfqTestcase()[pri:2, instance:testcases.Tc_PolicytermsPage@37afeb11]" started-at="2024-01-31T15:27:21 IST" name="rfqTestcase" finished-at="2024-01-31T15:27:50 IST" duration-ms="29277" status="PASS">
+        </test-method> <!-- addProduct -->
+        <test-method signature="addProductWithInvalid()[pri:3, instance:testcases.IntermediaryDeleteProduct@242b836]" started-at="2024-02-02T09:41:15 IST" name="addProductWithInvalid" finished-at="2024-02-02T09:41:22 IST" duration-ms="7901" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- rfqTestcase -->
-        <test-method signature="createrfq()[pri:3, instance:testcases.Tc_PolicytermsPage@37afeb11]" started-at="2024-01-31T15:27:50 IST" name="createrfq" finished-at="2024-01-31T15:28:45 IST" duration-ms="54812" status="PASS">
+        </test-method> <!-- addProductWithInvalid -->
+        <test-method signature="addCoverage()[pri:4, instance:testcases.IntermediaryDeleteProduct@242b836]" started-at="2024-02-02T09:41:22 IST" name="addCoverage" finished-at="2024-02-02T09:41:28 IST" duration-ms="5617" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createrfq -->
-        <test-method signature="coveragedetailspage()[pri:4, instance:testcases.Tc_PolicytermsPage@37afeb11]" started-at="2024-01-31T15:28:45 IST" name="coveragedetailspage" finished-at="2024-01-31T15:28:45 IST" duration-ms="208" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- addCoverage -->
+        <test-method signature="addCoverageWithInvalidata()[pri:5, instance:testcases.IntermediaryDeleteProduct@242b836]" started-at="2024-02-02T09:41:28 IST" name="addCoverageWithInvalidata" finished-at="2024-02-02T09:41:30 IST" duration-ms="2240" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"flt-semantics[aria-label="-----Policy Type-----"]"}
-  (Session info: chrome=121.0.6167.86)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'OJAS-DD571', ip: '192.168.5.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\sa22043\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7772f2d3dd514f2e57dafb622fa7539f
-*** Element info: {Using=css selector, value=flt-semantics[aria-label="-----Policy Type-----"]}]]>
+Command: [0fd4600b167f8e99539e765354b9f190, isElementEnabled {id=46FEB754DD713F600CC7AC11D86BCD86_element_64}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.139, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\vg22159\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61690}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61690/devtoo..., se:cdpVersion: 121.0.6167.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0fd4600b167f8e99539e765354b9f190)] -> css selector: flt-semantics[aria-label='OK']]
+Session ID: 0fd4600b167f8e99539e765354b9f190]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"flt-semantics[aria-label="-----Policy Type-----"]"}
-  (Session info: chrome=121.0.6167.86)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'OJAS-DD571', ip: '192.168.5.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\sa22043\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7772f2d3dd514f2e57dafb622fa7539f
-*** Element info: {Using=css selector, value=flt-semantics[aria-label="-----Policy Type-----"]}
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.getWrappedElement(Unknown Source)
-at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1006)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
-at pageobjects.Coveragedetailspage.clickOnPolicyType(Coveragedetailspage.java:24)
-at testcases.Tc_Coveragedetails.coveragedetailspage(Tc_Coveragedetails.java:13)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+Command: [0fd4600b167f8e99539e765354b9f190, isElementEnabled {id=46FEB754DD713F600CC7AC11D86BCD86_element_64}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.139, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\vg22159\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61690}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61690/devtoo..., se:cdpVersion: 121.0.6167.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0fd4600b167f8e99539e765354b9f190)] -> css selector: flt-semantics[aria-label='OK']]
+Session ID: 0fd4600b167f8e99539e765354b9f190
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:182)
+at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isEnabled(Unknown Source)
+at pageobjects.IntermediaryProductsPage.clickonOkBtn(IntermediaryProductsPage.java:169)
+at testcases.IntemediaryAddCoverageTest.addCoverageWithInvalidata(IntemediaryAddCoverageTest.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -101,88 +99,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- coveragedetailspage -->
-        <test-method signature="PolicytermsPage()[pri:5, instance:testcases.Tc_PolicytermsPage@37afeb11]" started-at="2024-01-31T15:28:45 IST" name="PolicytermsPage" finished-at="2024-01-31T15:28:47 IST" duration-ms="2064" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#flt-semantic-node-1363"}
-  (Session info: chrome=121.0.6167.86)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'OJAS-DD571', ip: '192.168.5.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\sa22043\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7772f2d3dd514f2e57dafb622fa7539f
-*** Element info: {Using=css selector, value=#flt-semantic-node-1363}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#flt-semantic-node-1363"}
-  (Session info: chrome=121.0.6167.86)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'OJAS-DD571', ip: '192.168.5.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\sa22043\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7772f2d3dd514f2e57dafb622fa7539f
-*** Element info: {Using=css selector, value=#flt-semantic-node-1363}
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-at pageobjects.policytermsPage.clickonedit(policytermsPage.java:26)
-at testcases.Tc_PolicytermsPage.PolicytermsPage(Tc_PolicytermsPage.java:12)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- addCoverageWithInvalidata -->
+        <test-method signature="deleteProduct()[pri:6, instance:testcases.IntermediaryDeleteProduct@242b836]" started-at="2024-02-02T09:41:30 IST" name="deleteProduct" finished-at="2024-02-02T09:41:32 IST" duration-ms="1782" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PolicytermsPage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Tc_PolicytermsPage@37afeb11]" started-at="2024-01-31T15:28:47 IST" name="teardown" finished-at="2024-01-31T15:28:47 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- deleteProduct -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.IntermediaryDeleteProduct@242b836]" started-at="2024-02-02T09:41:32 IST" name="teardown" finished-at="2024-02-02T09:41:32 IST" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testcases.Tc_PolicytermsPage -->
+      </class> <!-- testcases.IntermediaryDeleteProduct -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

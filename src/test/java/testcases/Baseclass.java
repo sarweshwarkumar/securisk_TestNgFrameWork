@@ -35,8 +35,14 @@ public class Baseclass {
 	}
 
 	public void WaitUntilElementVisible(WebElement element) {
-		wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	public void startReport(String filename) {
+		reports = new ExtentReports("./TestReports/"+filename+".html");
+	}
+	public void endReport() {
+		reports.endTest(test);
 	}
 
 	@BeforeSuite
@@ -61,7 +67,7 @@ public class Baseclass {
 	public void teardown() {
 		//driver.close();;
 		// reports.endTest(test);
-		//reports.flush();
+		reports.flush();
 	}
 
 }

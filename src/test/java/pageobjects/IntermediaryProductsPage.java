@@ -47,6 +47,8 @@ public class IntermediaryProductsPage {
 	public WebElement EnterCoverageField;
 	@FindBy(css = "flt-semantics[aria-label='Add']")
 	public WebElement AddBtn;
+	@FindBy(css = "flt-semantics[aria-label='Coverage Added Successfully']")
+	public WebElement ConfirmAddCoverage;
 	@FindBy(css = "flt-semantics[aria-label='Delete']")
 	public WebElement DeleteProductBtn;
 	@FindBy(css = "flt-semantics[aria-label='Yes']")
@@ -110,6 +112,10 @@ public class IntermediaryProductsPage {
 
 	public boolean productAdded() {
 		return (ConfirmAddProduct.isDisplayed());
+
+	}
+	public boolean coverageAdded() {
+		return (ConfirmAddCoverage.isDisplayed());
 
 	}
 

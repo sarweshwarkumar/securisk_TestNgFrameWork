@@ -1,19 +1,25 @@
 package pageobjects;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.IOException;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.io.Files;
 
 public class Reusablemethods {
-	WebDriver driver;
+	 public WebDriver driver;
 	public Reusablemethods(WebDriver driver)
 	{
 		this.driver=driver;
@@ -39,10 +45,6 @@ public class Reusablemethods {
 	{
 		Actions ac=new Actions(driver);
 		ac.sendKeys(Keys.PAGE_UP);
-		
-		
-//		JavascriptExecutor js = (JavascriptExecutor) driver;
-//		js.executeScript("window.scrollBy(0,-1000)");
 		System.out.println("Scroll");
 	}
 	
@@ -55,6 +57,52 @@ public class Reusablemethods {
 		System.out.println("Screenshot captured successfully");
 	}
  
-	
+	public void MoveToElement(WebElement element) {
+		Actions action = new Actions(driver);
+		action.moveToElement(element).click().build().perform();
+
+	}
+
+	public void MoveToElementSendkeys(WebElement element, String text) {
+		Actions action = new Actions(driver);
+		action.moveToElement(element).click().sendKeys(text).build().perform();
+
+	}
+
+	public void ScrollToElement(WebElement element) {
+		Actions action = new Actions(driver);
+		action.scrollToElement(element);
+	}
+
+	public void Downkey() throws AWTException {
+		Robot robo = new Robot();
+		robo.keyPress(KeyEvent.VK_DOWN);
+		robo.keyRelease(KeyEvent.VK_DOWN);
+	}
+
+	public void EnterKey() throws AWTException {
+		Robot robo = new Robot();
+		robo.keyPress(KeyEvent.VK_ENTER);
+		robo.keyRelease(KeyEvent.VK_ENTER);
+
+	}
+
+	public void Scroll(int value) throws AWTException {
+		Robot robo = new Robot();
+		robo.mouseWheel(value);
+	}
+
+	public void closeapp() {
+		driver.close();
+	}
+
+	public String ScreenshotPath(String filename) throws IOException {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File loc = ts.getScreenshotAs(OutputType.FILE);
+		File file = new File(
+				"./ScreenShots" + "/" + filename + System.currentTimeMillis() + ".png");
+		Files.copy(loc, file);
+		return file.getAbsolutePath();
+	}
 
 }
